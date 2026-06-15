@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon sujet de veille technologique</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6fb;
+            color: #0b1d3a;
+            margin: 20px;
+        }
+
+        h1 {
+            color: navy;
+            text-align: center;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .keyword {
+            color: navy;
+            font-weight: bold;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-left: 5px solid navy;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1> Le SPOF: Single Point Of Failure</h1>
+
+<h2><b style="color:navy">Pourquoi l’absence de redondance peut transformer une panne locale en incident majeur ?</b></h2>
+
+<ins>Qu’est-ce qu’un Single Point of Failure, à quoi sert-il dans une architecture informatique,
+et comment éviter qu’un seul élément puisse bloquer tout un service ?</ins>
+
+<div class="box">
+
+<p>
+Le numérique fonctionne grâce à un ensemble de composants qui communiquent entre eux: serveurs, bases de données, routeurs, alimentations, connexions réseau…<br><br>
+
+Mais derrière cette apparente complexité, il existe parfois un maillon unique dont dépend tout le reste.
+
+C’est ce qu’on appelle un « Single Point of Failure ». Un SPOF désigne tout élément indispensable au fonctionnement d’un système : s’il tombe en panne, l’ensemble du service cesse de fonctionner.
+
+Le rôle d’un SPOF n’est donc pas de “servir” à un objectif particulier, mais au contraire de représenter un point critique qu’il faut identifier, surveiller et éliminer lorsque c’est possible.
+
+C’est un concept utilisé en ingénierie pour analyser la robustesse d’une infrastructure et prévenir les pannes majeures.
+
+Pour comprendre simplement, on peut prendre l’exemple d’une box Internet chez un particulier.<br>
+Tous les appareils du foyer dépendent d’elle pour être connectés.
+Si la box tombe, tout tombe.
+
+En entreprise ou dans un data center, ce même principe s’applique à une échelle bien plus vaste : une base de données centrale utilisée par toutes les applications, un commutateur qui relie un étage entier, un serveur unique qui gère l’authentification ou un seul lien réseau vers l’extérieur.
+
+Tant qu’un système repose sur un composant unique, sans alternative, ce composant devient un SPOF.<br>
+
+Les incidents récents comme la panne de Cloudflare qui a affecté l'accès à de nombreux services montrent comment une dépendance à un seul prestataire liée à une externalisation des flux (données, systèmes d’informations..) ou à un seul composant peut avoir des répercussions massives.
+
+Même si Cloudflare n’est pas le cœur du sujet, cet événement illustre parfaitement la notion de SPOF : quand tout transite par une même technologie ou par un même point de passage, un problème peut se propager instantanément à une multitude de sites.
+
+Cela révèle à quel point notre infrastructure numérique moderne repose parfois sur des équilibres fragiles.<br>
+
+Pour limiter ces risques, on utilise le principe de redondance.<br>
+Cela consiste à dupliquer les éléments essentiels pour éviter qu’un seul point ne devienne critique.
+
+Plusieurs serveurs peuvent exécuter la même application, plusieurs bases de données peuvent contenir les mêmes informations, plusieurs liens réseau peuvent relier un site à Internet, et plusieurs alimentations électriques peuvent se relayer.
+
+Cette redondance doit être pensée totalement : si un serveur très puissant est branché sur un seul onduleur ou sur une seule source d’énergie, alors même cet onduleur devient un SPOF.<br>
+
+Pour qu’un système soit réellement résilient, chaque niveau, matériel, réseau, stockage, ou encore alimentation doit avoir une alternative prête à prendre le relais.
+
+Comprendre le SPOF permet donc de comprendre comment se construit la fiabilité d’un service numérique.<br>
+
+Ce concept n’est pas réservé aux ingénieurs : il explique pourquoi certains services tombent soudainement, pourquoi d’autres résistent mieux aux pannes, et comment les grandes infrastructures travaillent pour garantir une disponibilité quasi permanente.
+
+La veille informatique autour de ces sujets est essentielle pour analyser les incidents, observer les architectures utilisées par les acteurs du numérique et identifier les stratégies qui permettent aujourd’hui de rendre Internet plus robuste.
+
+Dans un monde où les services numériques sont devenus indispensables, savoir repérer et éliminer les SPOF est devenu un enjeu central pour assurer la continuité et la sécurité des systèmes.
+</p>
+
+</div>
+
+<div class="footer">
+    <b>Mots-clés :</b> SPOF, redondance, résilience, infrastructure, panne
+</div>
+
+</body>
+</html>
